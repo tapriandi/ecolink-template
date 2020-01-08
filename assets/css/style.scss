@@ -1,0 +1,148 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+}
+
+$purple: #592C82;
+$darkpurple: #361B50;
+.purple { color: #592C82 }
+.gray { color: #575757 }
+.half { width: 50%;}
+.row { margin: 0;}
+.column {
+   display: flex;
+   flex-direction: column;
+}
+a:hover {
+   text-decoration: none;
+}
+
+.header {
+   position: fixed;
+   z-index: 5;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100px;
+   display: flex;
+   padding: 0 140px;
+   align-items: center;
+   justify-content: space-between;
+   background: linear-gradient(180deg, #30006b8a 0%, #ffffff00 100%);
+   
+   &-image img{
+      height: 100%;
+   }
+   .menu {
+      a {
+         color: white;
+         font-weight: 500;
+         padding-right: 50px;
+         &:last-child {
+            padding-right: 0;
+         }
+      }
+   }
+}
+.banner {
+   display: flex;
+   height: 150px;
+   padding: 0 100px;
+   align-items: center;
+   background-color: $purple;
+   img {
+      height: 60%;
+      margin: auto;
+   }
+   h2 {
+      font-style: italic;
+      font-size: 40px;
+      font-weight: 200;
+   }
+}
+
+.about {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   &-left {
+      margin: auto;
+      width: 40%;
+      h2, p {
+         width: 100%;
+      }
+   }
+   &-right img{
+      width: 100%;
+   }
+}
+
+.adv {
+   position: relative;
+   width: 100%;
+   &-left img {
+      width: 100%;
+   }
+   &-right {
+      margin: auto;
+      width: 40%;
+      &_content {
+         padding-top: 20px;
+         align-items: center;
+         .image {
+            width: 20%;
+         }
+         .text-content {
+            width: 80%;
+            padding-left: 20px;
+            h5 {
+               font-weight: bolder;
+            }
+         }
+      }
+   }
+}
+
+.product {
+   flex-wrap: wrap;
+   padding: 30px 140px;
+   &-box {
+      width: call(100%/3);
+      background: #000;
+      &_content img{
+         width: 100%;
+      }
+   }
+}
+
+
+.footer {
+   background-color: $purple;
+   justify-content: space-between;
+   padding: 80px 140px;
+   &-image img{
+      width: 200px;
+   }
+   a, p {
+      line-height: 2.5;
+      color: white;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 200;
+   }
+   h4 { padding-bottom: 10px; }
+}
+.footer-bottom {
+   background-color: $darkpurple;
+   height: 60px;
+   font-size: 13px;
+   font-weight: 200;
+   letter-spacing: 1px;
+   align-items: center;
+   justify-content: center;
+}
