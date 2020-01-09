@@ -9,6 +9,7 @@
    
    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/style.css"
    >
    <title>Official Website | Ecolink</title>
@@ -17,14 +18,14 @@
 <body>
 
    <!-- Header -->
-   <header id="home">
+   <header id="header">
       <div class="header">
          <div class="header-image">
             <img src="./assets/images/logo.png" alt="">
          </div>
          <div class="menu">
             <a href="#about">Tentang Kami</a>
-            <a href="#advantages">Keliebihan</a>
+            <a href="#advantage">Keliebihan</a>
             <a href="#product">Produk</a>
          </div>
       </div>
@@ -40,13 +41,13 @@
          </ol>
          <div class="carousel-inner">
             <div class="carousel-item active">
-               <img src="./assets/images/test.png" class="d-block w-100" alt="...">
+               <img src="./assets/images/Banner 1a.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-               <img src="./assets/images/test.png" class="d-block w-100" alt="...">
+               <img src="./assets/images/Banner 2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-               <img src="./assets/images/test.png" class="d-block w-100" alt="...">
+               <img src="./assets/images/Banner 3.jpg" class="d-block w-100" alt="...">
             </div>
          </div>
          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,7 +62,7 @@
    </div>
    <div class="carousel mobile"></div>
 
-   <div class="banner">
+   <div class="banner" data-aos="fade-down" data-aos-duration="1000">
       <img src="./assets/images/sun-icon.png" alt="">
       <h2>Selamat Datang di Dunia Baru yang Cemerlang</h2>
       <img src="./assets/images/sun-icon.png" alt="">
@@ -70,7 +71,7 @@
    <!-- About -->
    <div id="about">
       <div class="about row">
-         <div class="about-left half">
+         <div class="about-left half" data-aos="fade-right" data-aos-duration="1000">
             <h2 class="purple">Apa itu Ecolink?</h2>
             <p class="gray">EcoLink dibuat dengan visi untuk menerangi rumah-rumah di Indonesia dengan pencahayaan LED dan menghadirkan manfaatnya dalam kehidupan setiap lapisan keluarga, tanpa kecuali.
             </P>
@@ -94,7 +95,7 @@
             <img src="./assets/images/img-advantage.png" alt="">
          </div>
          <div class="adv-right half">
-            <div class="adv-right_content row">
+            <div class="adv-right_content row" data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="800">
                <div class="image">
                   <img src="./assets/images/icon1.png" alt="">
                </div>
@@ -104,7 +105,7 @@
                </div>
             </div>
 
-            <div class="adv-right_content row">
+            <div class="adv-right_content row" data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="800">
                <div class="image">
                   <img src="./assets/images/icon2.png" alt="">
                </div>
@@ -114,7 +115,7 @@
                </div>
             </div>
 
-            <div class="adv-right_content row">
+            <div class="adv-right_content row" data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="800">
                <div class="image">
                   <img src="./assets/images/icon3.png" alt="">
                </div>
@@ -124,7 +125,7 @@
                </div>
             </div>
 
-            <div class="adv-right_content row">
+            <div class="adv-right_content row" data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="800">
                <div class="image">
                   <img src="./assets/images/icon4.png" alt="">
                </div>
@@ -140,56 +141,70 @@
    <!-- Product -->
    <div id="product">
       <div class="product row">
-         <div class="product-box">
+         <div class="product-box" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
             <div class="product-box_content">
                <img src="./assets/images/product-led_downlight.png" alt="">
                <h4>Downlight LED</h4>
             </div>
-            <div class="product-middle"></div>
+            <div class="product-box_middle">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <a href="">Selengkapnya</a>
+            </div>
          </div>
 
-         <div class="product-box">
-            <div class="product-box_content">
+         <div class="product-box" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+            <div class="product-box_content" >
                <img src="./assets/images/product-led_bulkhead.png" alt="">
                <h4>Bulkhead/Surface LED</h4>
             </div>
-            <div class="product-middle"></div>
+            <div class="product-box_middle">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <a href="">Selengkapnya</a>
+            </div>
          </div>
 
-         <div class="product-box">
-            <div class="product-box_content">
+         <div class="product-box" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+            <div class="product-box_content" >
                <img src="./assets/images/product-led_bulb.png" alt="">
                <h4>Bohlam LED</h4>
             </div>
-            <div class="product-middle"></div>
+            <div class="product-box_middle">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <a href="">Selengkapnya</a>
+            </div>
          </div>
 
-         <div class="product-box">
+         <div class="product-box" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
             <div class="product-box_content">
                <img src="./assets/images/product-led_floodlight.png" alt="">
                <h4>lampu Sorot LED</h4>
             </div>
-            <div class="product-middle"></div>
+            <div class="product-box_middle">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <a href="">Selengkapnya</a>
+            </div>
          </div>
 
-         <div class="product-box">
+         <div class="product-box" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
             <div class="product-box_content">
                <img src="./assets/images/product-led_batten_t8.png" alt="">
                <h4>Batten LED</h4>
             </div>
-            <div class="product-middle"></div>
+            <div class="product-box_middle"></div>
          </div>
       </div>
    </div>
 
    <!-- Footer -->
    <footer id="footer">
+      <div class="line"></div>
+      <!-- <hr class="p-0 m-0"> -->
       <div class="footer row">
          <div class="footer-image">
             <img src="./assets/images/logo-footer.png" alt="">
          </div>
          <div class="footer-contact">
-            <h4>Hubungi Kami</h4>
+            <h4 class="pb-3">Hubungi Kami</h4>
             <p>
                PT. Signify Commercial Indonesia
                <br>
@@ -201,13 +216,13 @@
             </p>
          </div>
          <div class="footer-policy column">
-            <h4>Kebijakan</h4>
+            <h4 class="pb-3">Kebijakan</h4>
             <a href="">Pemberitahuan Privasi</a>
             <a href="">Keuntungan Penggunaan</a>
             <a href="">Keamanan Product</a>
          </div>
          <div class="footer-social_media column">
-            <h4>Sosial Media</h4>
+            <h4 class="pb-3">Sosial Media</h4>
             <a href="">
                <img src="" alt="">
                : Ecolink Lighting
@@ -223,7 +238,8 @@
       </div>
    </footer>
 
-   
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="./assets/js/script.js"></script>
 
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
